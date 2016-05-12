@@ -1,0 +1,178 @@
+html{
+	background:url("https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/13092125_1702200183382713_2660176065682571574_n.jpg?oh=d0540e581f20bb4e4c39e0e4ff57c37c&oe=57A48813");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	width:50%;
+	margin:0 auto;
+	background:#fff;
+}
+
+header, article, footer{
+	margin:20px 60px;
+}
+
+img{
+	width:100%;
+}
+
+header h1{
+	margin:10px 0;
+	padding: 35px 0 0 0;
+}
+
+header h1 a{
+	font-size:40px;
+	margin:40px 0;
+	color:orange;
+	font-weight: 300;
+}
+
+header nav a{
+	margin:5px 10px 45px 0;
+	color:#efefef;
+	border-bottom: 1px solid #efefef;
+	padding-bottom:2px;
+}
+
+a{
+	text-decoration:none;
+}
+
+header h2{
+	font-size:15px;
+	margin:0 0 20px 0;
+	font-weight: 300;
+}
+
+article{
+	border-bottom:1px solid #aaa;
+	padding:20px 0;
+}
+
+article h3 {
+	color:#efefef;
+	margin:40px 0 10px 0;
+	font-size:25px;
+	font-weight: 300;
+}
+
+article h2{
+	margin:10px 0;
+}
+
+article h2 a{
+	font-size:20px;
+	color:#333;
+	font-weight: 300;
+	font-size:30px;
+}
+
+article h4{
+	padding:10px 0;
+}
+
+article h4 a{
+	float:right;
+	color:orange;
+	font-size:10pt;
+}
+
+article p {
+	font-size:10pt;
+	line-height:15pt;
+}
+
+article p:first-letter{ 
+	float: left;  
+	font-size: 75px; 
+	line-height: 60px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+}
+
+/*     Extra     */
+.image-overlay{
+	position: relative;
+	overflow: hidden;
+	height:200px;
+	width:100%;
+}
+
+.description{
+	position: absolute;
+    top: 127px;
+    /*width: 95%;*/
+    /*margin: 0 20px;*/
+    text-align: left;
+   
+    font-size:9pt;
+    font-style: italic;
+    transition: top .3s;
+	-webkit-transition: top .3s;
+}
+
+.image-overlay:hover{
+	overflow: visible;
+	height:auto;
+}
+
+.image-overlay:hover .description{
+	top:214px;
+	position: static;
+	opacity:1;
+	background:#efefef;
+	transition: top .3s;
+	-webkit-transition: top .3s;
+}
+
+/*.description{
+	position: absolute;
+    top: 127px;
+    width: 95%;
+    margin: 0 20px;
+    text-align: left;
+    opacity:1;
+    z-index:100;
+    font-size:9pt;
+    font-style: italic;
+}*/
+
+/*img:hover{
+	background-color:rgba(0,0,0,.8);
+	z-index:100;
+}
+
+img:hover{
+	background-color:rgba(0,0,0, .6);
+}
+
+.image-overlay:hover{
+	background-color:rgba(0,0,0,.8);
+	z-index:20;
+}
+
+.image-overlay img:hover~.description{
+	opacity:1;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
