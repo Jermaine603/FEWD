@@ -1,0 +1,42 @@
+
+* {
+  box-sizing:border-box;
+}
+
+header, footer {
+  height: 60px;
+  border: 1px solid black;
+}
+
+aside img {
+	max-width: 100%;
+}
+
+/*----------------------------------------------
+  C O L U M N   L A Y O U T
+------------------------------------------------*/
+
+/*
+INSTRUCTIONS:
+STEPS 1 & 2 are in the index.html file & 
+step #3 is at thetop of this file
+*/
+
+
+section {
+  width:70%;
+  float:left;
+  padding-right:10px;
+}
+
+aside {
+  width:30%;
+  float:left;
+}
+
+
+footer {
+  background: #F8CE78;
+  display:block;
+  
+}

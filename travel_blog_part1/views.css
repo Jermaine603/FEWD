@@ -1,22 +1,79 @@
 html{
-	background:url("https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/13092125_1702200183382713_2660176065682571574_n.jpg?oh=d0540e581f20bb4e4c39e0e4ff57c37c&oe=57A48813");
-	background-size: 100%;
-	background-repeat: no-repeat;
 	margin:0;
 	padding:0;
 	height:100%;
 }
 
+p{
+	line-height:16pt;
+}
+
 body{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	width:50%;
+	margin:0 auto;
+	background:url("https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/13092125_1702200183382713_2660176065682571574_n.jpg?oh=d0540e581f20bb4e4c39e0e4ff57c37c&oe=57A48813");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+header{
+	margin:10px 60px;
+	width:100%;
+}
+
+.container{
+	width:68%;
+	height:100%;
 	margin:0 auto;
 	background:#fff;
 }
 
-header, article, footer{
-	margin:20px 60px;
+.left-container-feed{
+	width: 65%;
+	display:inline-block;
+	padding: 0 15px 0 60px;
+	box-sizing: border-box;
+}
+
+aside{
+	width: 35%;
+	float:right;
+	display:inline-block;
+	padding:70px 60px 0 30px;
+	box-sizing: border-box;
+}
+
+.module{
+	padding:0px 0 40px 0;
+	border-bottom:1px solid #aaa;
+	margin: 0 0 30px 0;
+}
+
+.module p a{
+	float:right;
+	color:#F9D483;
+	font-size:10pt;
+	margin-bottom:30px;
+}
+
+.module a{
+	color:#F9D483;
+	line-height:16pt;
+}
+
+.module p{
+	font-size:10pt;
+}
+
+.module h4{
+	font-family: 'Lato', sans-serif;
+	font-weight:100px;
+}
+
+.module ul li{
+	font-size:10pt;
 }
 
 img{
@@ -26,20 +83,28 @@ img{
 header h1{
 	margin:10px 0;
 	padding: 35px 0 0 0;
+	display:inline-block;
 }
 
 header h1 a{
 	font-size:40px;
 	margin:40px 0;
-	color:orange;
+	color:#F9D483;
 	font-weight: 300;
 }
 
 header nav a{
-	margin:5px 10px 45px 0;
-	color:#efefef;
-	border-bottom: 1px solid #efefef;
-	padding-bottom:2px;
+	color: #fff;
+    background: #d2d2d2;
+    border-bottom: 1px solid #efefef;
+    padding: 11px;
+    text-align: center;
+    width: 12%;
+    display: inline-block;
+}
+
+header nav a:hover{
+	background:orange;
 }
 
 a{
@@ -50,15 +115,17 @@ header h2{
 	font-size:15px;
 	margin:0 0 20px 0;
 	font-weight: 300;
+	display:inline-block;
+	padding: 0 20px;
 }
 
 article{
 	border-bottom:1px solid #aaa;
-	padding:20px 0;
+	padding:0 0 20px 0;
 }
 
 article h3 {
-	color:#efefef;
+	color:#d2d2d2;
 	margin:40px 0 10px 0;
 	font-size:25px;
 	font-weight: 300;
@@ -81,13 +148,20 @@ article h4{
 
 article h4 a{
 	float:right;
-	color:orange;
+	color:#F9D483;
 	font-size:10pt;
+}
+
+.image-overlay:hover article p {
+	   transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+
 }
 
 article p {
 	font-size:10pt;
-	line-height:15pt;
+	   transition: all linear .3s;
+	-webkit-transition: all linear .3s;
 }
 
 article p:first-letter{ 
@@ -97,6 +171,28 @@ article p:first-letter{
 	padding-top: 4px; 
 	padding-right: 8px; 
 	padding-left: 3px; 
+	color:#d2d2d2;
+}
+
+footer{
+	margin:10px 60px;
+}
+
+footer nav a{
+	font-size:10pt;
+	/*margin-left:5px;*/
+	color:#F9D483;
+}
+
+footer nav a:nth-child(1):after, 
+footer nav a:nth-child(2):after, 
+footer nav a:nth-child(3):after,
+footer nav a:nth-child(4):after,
+footer nav a:nth-child(5):after{
+	content:"|";
+	color:#000;
+	font-size:10px;
+	padding:0 7px;
 }
 
 /*     Extra     */
@@ -108,16 +204,14 @@ article p:first-letter{
 }
 
 .description{
-	position: absolute;
-    top: 127px;
-    /*width: 95%;*/
-    /*margin: 0 20px;*/
+    top: -127px;
+    position: relative;
+    opacity:0;
     text-align: left;
-   
     font-size:9pt;
     font-style: italic;
-    transition: top .3s;
-	-webkit-transition: top .3s;
+    transition: all linear .3s;
+	-webkit-transition: all linear .3s;
 }
 
 .image-overlay:hover{
@@ -126,13 +220,40 @@ article p:first-letter{
 }
 
 .image-overlay:hover .description{
-	top:214px;
-	position: static;
+	top:0;
 	opacity:1;
 	background:#efefef;
-	transition: top .3s;
-	-webkit-transition: top .3s;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	/*position:inherit;*/
 }
+
+/*.description{
+	position: absolute;*/
+    top: 127px;
+    /*width: 95%;*/
+    /*margin: 0 20px;*/
+ /*   text-align: left;
+   	opacity:0;
+    font-size:9pt;
+    font-style: italic;
+    transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+}*/
+
+/*.image-overlay:hover{
+	overflow: visible;
+	height:auto;
+}
+
+.image-overlay:hover .description{
+	top:0;
+	opacity:1;
+	background:#efefef;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	position:inherit;
+}*/
 
 /*.description{
 	position: absolute;
